@@ -1,0 +1,65 @@
+<!Doctype HTML>
+<html>
+<head>
+	
+  <meta charset="UTF-8">
+  <title> FED Pre Screen Test </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+	
+
+</head>
+<body>
+
+  <div class="container">
+  
+   <h1>Recreate this using HTML &amp; CSS</h1>
+ 
+  	<div id="fund-Progress">
+  		
+      <span class="tooltip" id="tooltip">
+           <!--  $167 still needed for this project -->
+      </span>
+
+  		<div id="fund-Progress-Bar">
+  			<div id="progress-Bar-label">  </div>
+  		</div>
+
+  	</div>
+    
+    <div class="main-Section">
+      <P><span>Only 3 days left </span> to fund this project</P>
+
+      <p id="p1" > join the 42 other donors who have already supported this project. Every dollar helps</p>
+    
+      <div class="fund-Amount-Section"> 
+        <input type="text" class="fund" id="fund" placeholder="fund amount" required maxlength="3" onkeypress="return isNumber(event)"/>
+          <i class="fa fa-usd" aria-hidden="true"></i>
+
+
+         <button class="fund-Submit" onClick="progressbar()"> Give Now </button> 
+         <span> Why give $50? </span>
+      </div>
+    </div>
+    
+    <div class="bottom-Section"> 
+        
+        <button  class="button-Left"> Save for later </button> 
+        <button  class="button-Right"> Tell your friends </button> 
+         
+    </div>
+
+    <div id="number-Of-Occurence">
+      <input type=text id="character" placeholder= "enter single letter" maxlength="1" />
+      <button onclick="countLetter()"> click for letter occurrence </button>
+      <p> </p>
+      
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

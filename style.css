@@ -1,0 +1,224 @@
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+}
+
+
+/* Fonts */
+h1 {
+  font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
+}
+
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+
+/* Your CSS goes here */
+
+#fund-Progress {
+  position:relative;
+  width:360px;
+  height: 22px;
+  background-color: #eaeaea;
+  /*border: 1px solid #eaeaea;*/
+  margin: auto;
+  border-radius: 3px;
+}
+
+#fund-Progress .tooltip {
+  visibility: hidden;
+  width:360px;
+  background-color: #424242;
+  color:#fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 12px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 28px;
+  left:60px;
+  margin-left : -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#fund-Progress .tooltip::after {
+  content:"";
+  position: absolute;
+  top:100%;
+  left:78%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#fund-Progress:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#fund-Progress-Bar {
+  position: absolute;
+  height:100%;
+  background-color: #1CBC2C;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.progress-Bar-label {
+  text-align: center;
+  font-size: 10px;
+  
+}
+
+
+.main-Section {
+  width: 360px;
+  margin: 10px auto;
+  padding: 20px;
+  font-size: 16px;
+  text-align: justify;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  /*height:300px;*/
+}
+
+.fund-Amount-Section {
+   position: relative;
+   overflow: hidden;
+   margin-top: 15px;
+  /* border: 1px solid red;*/
+}
+
+/*.fund {
+       width: 145px;
+    padding: 10px 20px;
+    border: 1px solid #eaeaea; 
+    font-size: 15px;
+}*/
+
+.fund-Amount-Section input{
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    width: 145px;
+    padding: 10px 20px;
+    /* border: 1px solid #eaeaea; */
+    font-size: 15px;
+}
+
+.fund-Amount-Section span { 
+    font-size: 12px;
+    padding: 10px 0px;
+    color: #20A1D4;
+}
+.fa {
+    position: absolute;
+    top: 13px;
+    left: 12px;
+}
+
+.fund-Submit {
+    width: 145px;
+    float: right;
+    cursor: pointer;
+    padding: 11px 20px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #1CBC2C;
+}
+
+.bottom-Section {
+    width: 360px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.bottom-Section .button-Left{
+    width: 167px;
+    float: left;
+    color: #777;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 3px;
+}
+
+.bottom-Section .button-Right{
+    width: 167px;
+    float: right;
+    color: #777;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 3px;
+}
+
+
+#number-Of-Occurence {
+  width:360px;
+  margin:auto;
+  overflow: hidden;
+}
+
+#number-Of-Occurence input {
+    width: 167px;
+    float: left;
+    outline: none;
+    color: #777;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+}
+
+
+#number-Of-Occurence button {
+    width: 167px;
+    float: right;
+    color: #777;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 3px;
+}
+
+#number-Of-Occurence p {
+  clear: both;
+  padding: 16px;
+}
